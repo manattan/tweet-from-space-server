@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'ISS',
+    'rest_flamework'
 ]
 
 MIDDLEWARE = [
