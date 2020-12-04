@@ -11,4 +11,8 @@ def sendISSLocation(request):
     return HttpResponse(json_str)
 
 def directMessage(request):
-    return 0
+    token=request.headers['Authorization']
+    headers={'Authorization': 'Bearer {}'.format(token)}
+    data = json.loads(request.body)
+    message = data['message']
+    return HttpResponse()
