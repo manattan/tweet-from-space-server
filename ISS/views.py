@@ -8,5 +8,7 @@ from ISS.components.getISSLocation import getISSLocation
 def sendISSLocation(request):
     data = getISSLocation()
     json_str=json.dumps(data)
-    print(HttpResponse(json_str,content_type="application/json, charset=utf-8"))
     return HttpResponse(json_str)
+
+def directMessage(request):
+    return 0
