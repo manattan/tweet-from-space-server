@@ -7,6 +7,7 @@ name = "pypi"
 gunicorn = "*"
 django-heroku = "*"
 django = "*"
+djangorestframework>=3.0.0
 firebase-admin = "*"
 
 [dev-packages]
